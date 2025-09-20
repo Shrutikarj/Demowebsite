@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple JS Program</title>
+</head>
+<body>
+  <h1>Greeting Program</h1>
+  <input type="text" id="name" placeholder="Enter your name">
+  <button onclick="greetUser()">Greet Me</button>
+  <p id="greeting"></p>
+
+  <script>
+    function greetUser() {
+      // Get the value from the input
+      let name = document.getElementById('name').value;
+      
+      // Display greeting message
+      document.getElementById('greeting').innerText = "Hello, " + name + "! Welcome!";
+    }
+  </script>
+</body>
+</html>
